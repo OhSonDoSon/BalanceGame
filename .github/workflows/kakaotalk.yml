@@ -14,12 +14,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: KakaoTalk CI Action
-        uses: Alfex4936/kakaotalk-ci-action@v1.0.1
+        uses: Alfex4936/kakaotalk-ci-action@main
         with:
-          kakao_access_token: ${{secrets.KAKAO_ACCESS_TOKEN}}
+          kakao_access_token: ${{ secrets.KAKAO_ACCESS_TOKEN }}
           function_name: send_to_me_custom
           template_id: "93112"
           template_args: '{"title": "test", "desc": "설명"}'
