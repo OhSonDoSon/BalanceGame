@@ -16,7 +16,7 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": "./client/tsconfig.json"
+    "project": "client/tsconfig.json"
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
@@ -29,7 +29,7 @@
     },
     "import/resolver": {
       "typescript": {
-        "project": "./client/tsconfig.json",
+        "project": "client/tsconfig.json",
         "alwaysTryTypes": true
       }
     }
