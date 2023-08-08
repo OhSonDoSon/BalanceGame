@@ -22,3 +22,4 @@ jobs:
           kakao_access_token: ${{secrets.KAKAO_ACCESS_TOKEN}}
           function_name: send_to_me_custom
           template_id: "93112"
+          template_args: '{"title": "test", "desc": "설명"}'
