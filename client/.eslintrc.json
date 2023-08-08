@@ -16,7 +16,7 @@
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": "client/tsconfig.json"
+    "project": "./tsconfig.json"
   },
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
@@ -24,6 +24,9 @@
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }]
   },
   "settings": {
+    "react": {
+      "version": "detect"
+    },
     "import/parsers": {
       "@typescript-eslint/parser": [".ts", ".tsx"]
     },
