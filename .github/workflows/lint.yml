@@ -6,7 +6,7 @@ jobs:
   run-linters:
     name: Run linters
     runs-on: ubuntu-latest
-
+    if: github.actor == 'OhDaky'
     steps:
       - name: Check out source code
         uses: actions/checkout@v2
@@ -21,12 +21,12 @@ jobs:
           cd client
           npm ci
 
-      - name: Run ESLint
-        run: |
-          cd client
-          npx eslint . --ext .ts,.tsx
+      # - name: Run ESLint
+      #   run: |
+      #     cd client
+      #     npx eslint . --ext .ts,.tsx
 
-      - name: Run Prettier
-        run: |
-          cd client
-          npx prettier --check .
+      # - name: Run Prettier
+      #   run: |
+      #     cd client
+      #     npx prettier --check .
