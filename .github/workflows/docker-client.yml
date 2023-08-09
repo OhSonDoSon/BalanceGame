@@ -1,4 +1,4 @@
-name: front_Docker Image Push
+name: Front Docker Image Push
 
 on:
   workflow_run:
