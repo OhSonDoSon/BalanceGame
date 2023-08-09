@@ -1,4 +1,4 @@
-name: 도커 이미지 푸시
+name: front_Docker Image Push
 
 on:
   workflow_run:
