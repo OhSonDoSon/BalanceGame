@@ -1,5 +1,6 @@
 package com.balancegame.server.member.domain;
 
+import com.balancegame.server.security.enums.AuthProvider;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -18,5 +19,11 @@ public class Member {
     private String email;
     private String password;
     private String type;
+
+    @Enumerated(EnumType.STRING)
+    private AuthProvider authProvider;
+
+//    @Enumerated(EnumType.STRING)
+//    private Role role;
 }
 
