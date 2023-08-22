@@ -3,7 +3,7 @@ package com.balancegame.server.member.domain;
 import com.balancegame.server.common.domain.BaseDateEntity;
 import com.balancegame.server.security.enums.AuthProvider;
 import com.balancegame.server.security.enums.Role;
-import com.balancegame.server.security.oAuth.info.OAuth2UserInfo;
+import com.balancegame.server.security.oAuth.dto.response.OAuth2UserInfo;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -30,6 +30,7 @@ public class Member extends BaseDateEntity {
     @Enumerated(EnumType.STRING)
     private Role role;
 
+    @Column(name = "o_auth2_id")
     private String oAuth2Id;
 
     @Builder
