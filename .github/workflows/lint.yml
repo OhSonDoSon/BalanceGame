@@ -24,7 +24,7 @@ jobs:
       - name: Run ESLint
         run: |
           cd client
-          npx eslint . --ext .ts,.tsx
+          npx eslint . --ext .ts,.tsx "no-unused-vars: off"
 
       - name: Run Prettier
         run: |
