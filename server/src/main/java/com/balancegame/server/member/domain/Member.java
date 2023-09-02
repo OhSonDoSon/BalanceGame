@@ -3,7 +3,7 @@ package com.balancegame.server.member.domain;
 import com.balancegame.server.common.domain.BaseDateEntity;
 import com.balancegame.server.security.enums.AuthProvider;
 import com.balancegame.server.security.enums.Role;
-import com.balancegame.server.security.oAuth.dto.response.OAuth2UserInfo;
+import com.balancegame.server.security.oAuth.dto.OAuth2UserInfo;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Builder;
@@ -42,6 +42,7 @@ public class Member extends BaseDateEntity {
         this.authProvider = authProvider;
         this.role = role;
         this.oAuth2Id = oAuth2Id;
+
     }
 
     public void updateOAuthInfo(OAuth2UserInfo oAuth2UserInfo){

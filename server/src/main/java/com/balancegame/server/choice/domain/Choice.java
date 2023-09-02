@@ -1,6 +1,7 @@
 package com.balancegame.server.choice.domain;
 
 import com.balancegame.server.choice.enums.ChoiceValue;
+import com.balancegame.server.common.domain.BaseDateEntity;
 import com.balancegame.server.member.domain.Member;
 import com.balancegame.server.vote.domain.Vote;
 import jakarta.persistence.*;
@@ -12,7 +13,7 @@ import lombok.NoArgsConstructor;
 @Getter
 @Table(name = "choice")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Choice {
+public class Choice extends BaseDateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

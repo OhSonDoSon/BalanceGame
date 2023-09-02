@@ -18,6 +18,8 @@ public enum ErrorCode {
     ,NO_EMAIL_EXIST(HttpStatus.BAD_REQUEST, "SECURITY_007","해당 OAuth2 제공자로부터 이메일을 가져오지 못하였습니다.")
     ,ALREADY_AUTH_EMAIL(HttpStatus.BAD_REQUEST, "SECURITY_008","이미 해당 플랫폼으로 회원가입 이력이 있습니다.")
     ,INVALID_REDIRECT_URI(HttpStatus.BAD_REQUEST, "SECURITY_009","리아이렉트 URI 가 옳지 않습니다.")
+    ,NO_EXIST_REFRESH_TOKEN(HttpStatus.BAD_REQUEST, "SECURITY_010","리프레시 인증 토큰이 존재하지 않습니다.")
+    ,NO_GENERATE_TOKEN(HttpStatus.BAD_REQUEST, "SECURITY_011","토큰이 생성되지 않았습니다.")
     //Member
     ,NO_EXISTS_MEMBER(HttpStatus.BAD_REQUEST,"MEMBER_001", "올바른 회원이 아닙니다.")
     ;

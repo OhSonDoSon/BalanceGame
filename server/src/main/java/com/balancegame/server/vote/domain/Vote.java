@@ -1,5 +1,6 @@
 package com.balancegame.server.vote.domain;
 
+import com.balancegame.server.common.domain.BaseDateEntity;
 import com.balancegame.server.member.domain.Member;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
@@ -12,7 +13,7 @@ import java.time.LocalDateTime;
 @Getter
 @Table(name = "vote")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Vote {
+public class Vote extends BaseDateEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
